@@ -1,0 +1,211 @@
+product_id,name,brand,category_id,pack_size,unit,base_unit_qty
+1,Classic Basmati Rice,India Gate,1,1 kg,kg,1
+2,Classic Basmati Rice,India Gate,1,5 kg,kg,5
+3,Classic Basmati Rice,India Gate,1,10 kg,kg,10
+4,Rozana Basmati Rice,Daawat,1,1 kg,kg,1
+5,Rozana Basmati Rice,Daawat,1,5 kg,kg,5
+6,Tibar Basmati Rice,Kohinoor,1,1 kg,kg,1
+7,Tibar Basmati Rice,Kohinoor,1,5 kg,kg,5
+8,Sona Masoori Rice,Lalitha,1,1 kg,kg,1
+9,Sona Masoori Rice,Lalitha,1,5 kg,kg,5
+10,Sona Masoori Rice,Lalitha,1,10 kg,kg,10
+11,Select Whole Wheat Atta,Aashirvaad,1,1 kg,kg,1
+12,Select Whole Wheat Atta,Aashirvaad,1,5 kg,kg,5
+13,Select Whole Wheat Atta,Aashirvaad,1,10 kg,kg,10
+14,Chakki Fresh Atta,Pillsbury,1,1 kg,kg,1
+15,Chakki Fresh Atta,Pillsbury,1,5 kg,kg,5
+16,Oats,Quaker,1,1 kg,kg,1
+17,Oats,Quaker,1,5 kg,kg,5
+18,Roasted Vermicelli,Bambino,1,500 g,g,0.5
+19,Roasted Vermicelli,Bambino,1,1 kg,kg,1
+20,Brown Rice,India Gate,1,1 kg,kg,1
+21,Brown Rice,India Gate,1,5 kg,kg,5
+22,Rava,MTR,1,1 kg,kg,1
+23,Rava,MTR,1,5 kg,kg,5
+24,Besan,Fortune,1,1 kg,kg,1
+25,Besan,Fortune,1,5 kg,kg,5
+26,Jaggery,24 Mantra,1,500 g,g,0.5
+27,Jaggery,24 Mantra,1,1 kg,kg,1
+28,Sugar,Dhampure,1,1 kg,kg,1
+29,Sugar,Dhampure,1,5 kg,kg,5
+30,Toor Dal,Tata Sampann,2,1 kg,kg,1
+31,Toor Dal,Tata Sampann,2,5 kg,kg,5
+32,Moong Dal,Tata Sampann,2,1 kg,kg,1
+33,Moong Dal,Tata Sampann,2,5 kg,kg,5
+34,Chana Dal,24 Mantra,2,1 kg,kg,1
+35,Chana Dal,24 Mantra,2,5 kg,kg,5
+36,Urad Dal,Organic Tattva,2,1 kg,kg,1
+37,Urad Dal,Organic Tattva,2,5 kg,kg,5
+38,Rajma Chitra,Rajdhani,2,1 kg,kg,1
+39,Rajma Chitra,Rajdhani,2,5 kg,kg,5
+40,Kabuli Chana,Tata Sampann,2,1 kg,kg,1
+41,Kabuli Chana,Tata Sampann,2,5 kg,kg,5
+42,Masoor Dal,Organic Tattva,2,1 kg,kg,1
+43,Masoor Dal,Organic Tattva,2,5 kg,kg,5
+44,Moong Whole,Tata Sampann,2,1 kg,kg,1
+45,Moong Whole,Tata Sampann,2,5 kg,kg,5
+46,Onion,Local,3,1 kg,kg,1
+47,Onion,Local,3,5 kg,kg,5
+48,Potato,Local,3,1 kg,kg,1
+49,Potato,Local,3,5 kg,kg,5
+50,Tomato,Local,3,500 g,g,0.5
+51,Tomato,Local,3,1 kg,kg,1
+52,Carrot,Local,3,500 g,g,0.5
+53,Carrot,Local,3,1 kg,kg,1
+54,Beans,Local,3,500 g,g,0.5
+55,Beans,Local,3,1 kg,kg,1
+56,Cabbage,Local,3,1 pc,piece,1
+57,Cauliflower,Local,3,1 pc,piece,1
+58,Palak,Local,3,1 pc,piece,1
+59,Capsicum,Local,3,500 g,g,0.5
+60,Capsicum,Local,3,1 kg,kg,1
+61,Ginger,Local,3,500 g,g,0.5
+62,Ginger,Local,3,1 kg,kg,1
+63,Garlic,Local,3,500 g,g,0.5
+64,Garlic,Local,3,1 kg,kg,1
+65,Cucumber,Local,3,500 g,g,0.5
+66,Cucumber,Local,3,1 kg,kg,1
+67,Beetroot,Local,3,500 g,g,0.5
+68,Beetroot,Local,3,1 kg,kg,1
+69,Lemon,Local,3,1 pc,piece,1
+70,Robusta Banana,Local,4,1 kg,kg,1
+71,Robusta Banana,Local,4,5 kg,kg,5
+72,Shimla Apple,Hill,4,1 kg,kg,1
+73,Shimla Apple,Hill,4,5 kg,kg,5
+74,Orange,Nagpur,4,1 kg,kg,1
+75,Orange,Nagpur,4,5 kg,kg,5
+76,Alphonso Mango,Ratnagiri,4,1 kg,kg,1
+77,Alphonso Mango,Ratnagiri,4,5 kg,kg,5
+78,Pomegranate,Local,4,1 kg,kg,1
+79,Pomegranate,Local,4,5 kg,kg,5
+80,Green Grapes,Local,4,500 g,g,0.5
+81,Green Grapes,Local,4,1 kg,kg,1
+82,Watermelon,Local,4,1 pc,piece,1
+83,Papaya,Local,4,1 kg,kg,1
+84,Papaya,Local,4,5 kg,kg,5
+85,Chikoo,Local,4,1 kg,kg,1
+86,Chikoo,Local,4,5 kg,kg,5
+87,Pineapple,Local,4,1 pc,piece,1
+88,Taaza Milk,Amul,5,500 ml,ml,0.5
+89,Taaza Milk,Amul,5,1 L,L,1
+90,Goodlife Milk,Nandini,5,500 ml,ml,0.5
+91,Goodlife Milk,Nandini,5,1 L,L,1
+92,Gold Milk,Amul,5,500 ml,ml,0.5
+93,Gold Milk,Amul,5,1 L,L,1
+94,Butter,Amul,5,100 g,g,0.1
+95,Butter,Amul,5,500 g,g,0.5
+96,Processed Cheese,Amul,5,200 g,g,0.2
+97,Processed Cheese,Amul,5,500 g,g,0.5
+98,Paneer,Milky Mist,5,200 g,g,0.2
+99,Paneer,Milky Mist,5,500 g,g,0.5
+100,Curd,Hatsun,5,500 g,g,0.5
+101,Curd,Hatsun,5,1 kg,kg,1
+102,Fresh Cream,Amul,5,500 ml,ml,0.5
+103,Fresh Cream,Amul,5,1 L,L,1
+104,Ghee,Amul,5,500 ml,ml,0.5
+105,Ghee,Amul,5,1 L,L,1
+106,Ghee,GRB,5,500 ml,ml,0.5
+107,Ghee,GRB,5,1 L,L,1
+108,Sunflower Oil,Fortune,6,1 L,L,1
+109,Sunflower Oil,Fortune,6,5 L,L,5
+110,Sunflower Oil,Sundrop,6,1 L,L,1
+111,Sunflower Oil,Sundrop,6,5 L,L,5
+112,Mustard Oil,Fortune,6,500 ml,ml,0.5
+113,Mustard Oil,Fortune,6,1 L,L,1
+114,Groundnut Oil,Dhara,6,1 L,L,1
+115,Groundnut Oil,Dhara,6,5 L,L,5
+116,Coconut Oil,Parachute,6,500 ml,ml,0.5
+117,Coconut Oil,Parachute,6,1 L,L,1
+118,Active Oil,Oleev,6,1 L,L,1
+119,Active Oil,Oleev,6,5 L,L,5
+120,Haldi Powder,MDH,7,100 g,g,0.1
+121,Haldi Powder,MDH,7,200 g,g,0.2
+122,Chilli Powder,Everest,7,100 g,g,0.1
+123,Chilli Powder,Everest,7,200 g,g,0.2
+124,Coriander Powder,MDH,7,100 g,g,0.1
+125,Coriander Powder,MDH,7,200 g,g,0.2
+126,Garam Masala,Catch,7,100 g,g,0.1
+127,Garam Masala,Catch,7,200 g,g,0.2
+128,Salt,Tata,7,1 kg,kg,1
+129,Salt,Tata,7,5 kg,kg,5
+130,Salt,Aashirvaad,7,1 kg,kg,1
+131,Salt,Aashirvaad,7,5 kg,kg,5
+132,Cumin Powder,Everest,7,100 g,g,0.1
+133,Cumin Powder,Everest,7,200 g,g,0.2
+134,Garam Masala,MDH,7,100 g,g,0.1
+135,Garam Masala,MDH,7,200 g,g,0.2
+136,Sambar Powder,MTR,7,100 g,g,0.1
+137,Sambar Powder,MTR,7,200 g,g,0.2
+138,Chaat Masala,Everest,7,100 g,g,0.1
+139,Chaat Masala,Everest,7,200 g,g,0.2
+140,Marie Gold,Britannia,8,150 g,g,0.15
+141,Marie Gold,Britannia,8,300 g,g,0.3
+142,Parle-G,Parle,8,150 g,g,0.15
+143,Parle-G,Parle,8,300 g,g,0.3
+144,Classic Salted,Lays,8,150 g,g,0.15
+145,Classic Salted,Lays,8,300 g,g,0.3
+146,Aloo Bhujia,Haldiram,8,150 g,g,0.15
+147,Aloo Bhujia,Haldiram,8,300 g,g,0.3
+148,Good Day,Britannia,8,150 g,g,0.15
+149,Good Day,Britannia,8,300 g,g,0.3
+150,Dark Fantasy,Sunfeast,8,1 pc,piece,1
+151,Dark Fantasy,Sunfeast,8,4 pcs,piece,4
+152,Dairy Milk,Cadbury,8,1 pc,piece,1
+153,Dairy Milk,Cadbury,8,4 pcs,piece,4
+154,Masala Noodles,Maggi,8,1 pc,piece,1
+155,Masala Noodles,Maggi,8,4 pcs,piece,4
+156,Classic Coffee,Nescafe,9,50 g,g,0.05
+157,Classic Coffee,Nescafe,9,100 g,g,0.1
+158,Instant Coffee,Bru,9,50 g,g,0.05
+159,Instant Coffee,Bru,9,100 g,g,0.1
+160,Tea Gold,Tata,9,250 g,g,0.25
+161,Tea Gold,Tata,9,500 g,g,0.5
+162,Red Label Tea,Brooke Bond,9,250 g,g,0.25
+163,Red Label Tea,Brooke Bond,9,500 g,g,0.5
+164,Bournvita,Cadbury,9,500 g,g,0.5
+165,Bournvita,Cadbury,9,1 kg,kg,1
+166,Orange Juice,Tropicana,9,750 ml,ml,0.75
+167,Orange Juice,Tropicana,9,2 L,L,2
+168,Mixed Fruit Juice,Real,9,750 ml,ml,0.75
+169,Mixed Fruit Juice,Real,9,2 L,L,2
+170,Packaged Water,Bisleri,9,1 L,L,1
+171,Packaged Water,Bisleri,9,5 L,L,5
+172,Honey,Dabur,9,500 ml,ml,0.5
+173,Honey,Dabur,9,1 L,L,1
+174,Easy Wash,Surf Excel,10,1 kg,kg,1
+175,Easy Wash,Surf Excel,10,5 kg,kg,5
+176,Matic,Ariel,10,1 kg,kg,1
+177,Matic,Ariel,10,5 kg,kg,5
+178,Dishwash Liquid,Vim,10,500 ml,ml,0.5
+179,Dishwash Liquid,Vim,10,1 L,L,1
+180,Toilet Cleaner,Harpic,10,500 ml,ml,0.5
+181,Toilet Cleaner,Harpic,10,1 L,L,1
+182,Fabric Conditioner,Comfort,10,500 ml,ml,0.5
+183,Fabric Conditioner,Comfort,10,1 L,L,1
+184,Paper Napkins,Origami,10,1 pc,piece,1
+185,Machine Refill,Good Knight,10,1 pc,piece,1
+186,Cream Beauty Soap,Dove,11,1 pc,piece,1
+187,Cream Beauty Soap,Dove,11,4 pcs,piece,4
+188,Total Soap,Lifebuoy,11,1 pc,piece,1
+189,Total Soap,Lifebuoy,11,4 pcs,piece,4
+190,Strong Teeth,Colgate,11,100 g,g,0.1
+191,Strong Teeth,Colgate,11,200 g,g,0.2
+192,Toothpaste,Closeup,11,100 g,g,0.1
+193,Toothpaste,Closeup,11,200 g,g,0.2
+194,Shampoo,Clinic Plus,11,500 ml,ml,0.5
+195,Shampoo,Clinic Plus,11,1 L,L,1
+196,Shampoo,Pantene,11,500 ml,ml,0.5
+197,Shampoo,Pantene,11,1 L,L,1
+198,Handwash,Dettol,11,500 ml,ml,0.5
+199,Handwash,Dettol,11,1 L,L,1
+200,Face Wash,Himalaya,11,1 pc,piece,1
+201,Toothbrush,Colgate,11,1 pc,piece,1
+202,Brown Bread,Britannia,12,1 pc,piece,1
+203,Milk Bread,Modern,12,1 pc,piece,1
+204,Pav,Britannia,12,1 pc,piece,1
+205,White Bread,Harvest Gold,12,1 pc,piece,1
+206,Fruit Cake,Britannia,12,1 pc,piece,1
+207,Eggs,Farm Fresh,12,6 pcs,piece,6
+208,Eggs,Farm Fresh,12,12 pcs,piece,12
+209,Brown Eggs,Country,12,6 pcs,piece,6
+210,Brown Eggs,Country,12,12 pcs,piece,12

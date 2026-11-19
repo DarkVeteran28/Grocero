@@ -1,0 +1,99 @@
+:root {
+  --ink: #1c2416;
+  --muted: #3e4a38;
+  --paper: #f4f1e8;
+  --card: #fffdf8;
+  --line: #ddd4c3;
+  --green: #1f6b3a;
+  --green-dark: #144828;
+  --accent: #9a3e16;
+  --ok: #1f6b3a;
+  --warning: #8a5a00;
+  --warning-bg: #fff4d6;
+  --over: #8f1d1d;
+  --over-bg: #fdecea;
+  --shadow: 0 10px 30px rgba(28, 36, 22, 0.06);
+  --sans: "Avenir Next", "Segoe UI", sans-serif;
+  --serif: "Iowan Old Style", Palatino, Georgia, serif;
+  color-scheme: light;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+h1, h2, h3 { font-family: var(--serif); line-height: 1.2; font-weight: 600; }
+h1 { font-size: clamp(1.8rem, 3vw, 2.5rem); margin: 0 0 0.4rem; }
+h2 { font-size: 1.4rem; margin: 0 0 0.6rem; }
+p { margin: 0 0 0.8rem; }
+a { color: var(--green-dark); }
+img { max-width: 100%; }
+
+:focus-visible {
+  outline: 3px solid var(--green);
+  outline-offset: 2px;
+}
+
+.skip-link {
+  position: absolute;
+  left: 0.5rem;
+  top: -3rem;
+  background: var(--card);
+  color: var(--ink);
+  padding: 0.4rem 0.7rem;
+  z-index: 20;
+}
+.skip-link:focus { top: 0.5rem; }
+
+button, input, select, textarea { font: inherit; color: inherit; }
+button, .button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  min-height: 42px;
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid var(--green);
+  background: var(--green);
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+button.secondary, .button.secondary {
+  background: transparent;
+  color: var(--green-dark);
+}
+button.danger { background: var(--over); border-color: var(--over); }
+button:disabled { opacity: 0.55; cursor: not-allowed; }
+
+label { display: block; font-weight: 600; margin-bottom: 0.25rem; }
+input, select, textarea {
+  width: 100%;
+  min-height: 42px;
+  padding: 0.45rem 0.7rem;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: #fff;
+}
+textarea { min-height: 90px; }
+.field { margin-bottom: 0.9rem; }
+.help, .muted { color: var(--muted); }
+.field-error { color: var(--over); font-size: 0.92rem; margin: 0.25rem 0 0; }
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}

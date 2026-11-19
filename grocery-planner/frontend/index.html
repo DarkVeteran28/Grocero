@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Smart Grocery — Home</title>
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/layout.css">
+  <link rel="stylesheet" href="/css/components.css">
+</head>
+<body data-page="home">
+  <header class="site-header" id="navbar"></header>
+  <main id="main" class="wrap">
+    <section class="hero">
+      <div>
+        <h1>Compare grocery prices and stay inside the month</h1>
+        <p class="lead">Search a product, see which nearby store is actually cheaper after delivery, then check the basket against your monthly budget. Prices, per-unit costs, and store combinations all come from the server.</p>
+        <form id="quick-search" role="search">
+          <label for="q">Search products</label>
+          <div class="inline">
+            <input id="q" name="q" required maxlength="80" placeholder="Rice, milk, atta…">
+            <button type="submit">Compare prices</button>
+          </div>
+        </form>
+      </div>
+      <aside class="card">
+        <h2>Three ways to buy</h2>
+        <p>One store, a split across up to three stores, or the nearest shop. Delivery fees and free-delivery thresholds are included. Out-of-stock items stay visible.</p>
+        <p><a class="button" href="/lists.html">Open my lists</a></p>
+      </aside>
+    </section>
+    <section class="grid-3" style="margin-top:1rem">
+      <a class="card" href="/compare.html"><h2>Compare</h2><p>Filter by category and brand, then open a pack to see every store.</p></a>
+      <a class="card" href="/budget.html"><h2>Budget</h2><p>Set a month total, watch the pace, and get a warning before you overshoot.</p></a>
+      <a class="card" href="/insights.html"><h2>Insights</h2><p>See the cheapest store for a family staples basket and this month’s biggest drops.</p></a>
+    </section>
+    <section style="margin-top:1rem">
+      <h2>Biggest price drops</h2>
+      <div id="drops" role="status"></div>
+    </section>
+  </main>
+  <footer class="site-footer" id="footer"></footer>
+  <script type="module" src="/js/pages/home.js"></script>
+</body>
+</html>

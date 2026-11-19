@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Compare prices</title>
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/layout.css">
+  <link rel="stylesheet" href="/css/components.css">
+</head>
+<body data-page="compare">
+  <header class="site-header" id="navbar"></header>
+  <main id="main" class="wrap">
+    <h1>Compare</h1>
+    <p class="lead">Search by name or brand. The price shown is the cheapest in-stock pack, with its per-unit cost.</p>
+    <form id="filters" class="filters">
+      <div class="field"><label for="q">Name or brand</label><input id="q" name="q"></div>
+      <div class="field"><label for="category">Category</label><select id="category" name="category"><option value="">All categories</option></select></div>
+      <div class="field"><label for="brand">Brand</label><select id="brand" name="brand"><option value="">All brands</option></select></div>
+      <div class="field"><label for="sort">Sort</label>
+        <select id="sort" name="sort">
+          <option value="name_asc">Name</option>
+          <option value="price_asc" selected>Lowest pack price</option>
+          <option value="price_desc">Highest pack price</option>
+          <option value="unit_price_asc">Lowest per unit</option>
+          <option value="unit_price_desc">Highest per unit</option>
+        </select>
+      </div>
+      <div class="field"><label for="stock">Stock</label><select id="stock"><option value="">Any</option><option value="1">In stock somewhere</option></select></div>
+    </form>
+    <div id="status" role="status"></div>
+    <div id="results"></div>
+  </main>
+  <footer class="site-footer" id="footer"></footer>
+  <script type="module" src="/js/pages/compare.js"></script>
+</body>
+</html>
