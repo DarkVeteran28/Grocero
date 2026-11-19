@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: grocery-price-predictor
+    runtime: docker
+    plan: 0.5c-512mb
+    region: singapore
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    healthCheckPath: /api/config
+    envVars:
+      - key: SECRET_KEY
+        generateValue: true
+    disk:
+      name: grocery-data
+      mountPath: /data
+      sizeGB: 1

@@ -92,7 +92,20 @@ docker compose logs -f web   # follow application logs
 docker compose down          # stop containers; retain the database volume
 ```
 
-Set `PORT` in `.env` to change the host port. The database lives in the Docker volume `grocery_data`; back up that volume before removing or migrating it. `docker compose down -v` deletes it, including saved lists, budgets, and expenses. The image runs as a non-root user. If you deploy with a bind-mounted `/data` directory instead of the included named volume, make that directory writable by the container user (UID 10001).
+Set `PORT` in `.env` to change the host port. The database lives in the Docker volume `grocery_data`; back up that volume before removing or migrating it. `docker compose down -v` deletes it, including saved lists, budgets, and expenses. The startup script sets the data directory permissions, then runs Gunicorn as the non-root app user (UID 10001).
+
+### Deploy to Render
+
+The repository includes [`render.yaml`](render.yaml) for a Render Blueprint. It builds the Docker image, binds to Render's `PORT`, generates `SECRET_KEY`, and mounts a persistent disk at `/data` for SQLite.
+
+1. Push the repository to GitHub or another Git provider connected to Render.
+2. In Render, choose **New → Blueprint**, connect the repository, and select the branch containing `render.yaml`.
+3. Review the Blueprint. It creates a Singapore web service on Render's paid `0.5c-512mb` plan with a 1 GB persistent disk. Change the region or plan in `render.yaml` if needed, then apply it.
+4. Wait for the first deploy to finish, then open the service URL shown on its Render dashboard.
+
+The first boot initializes the mounted disk with the sample CSV data. Subsequent deploys preserve the database. Because Render disks are available only to paid web services, a free instance can be used only for a disposable demo: its SQLite changes are lost when the service restarts or deploys. A service with a persistent disk is limited to one instance and has a short interruption during deploys, so this SQLite setup is intended for a small single-instance app.
+
+**Before sharing the public URL:** the app has no login, and its Admin page can edit shared catalogue and price data. Lists and budgets are also shared by every visitor. Treat this as a demo until authentication and per-user data access are added; do not store private information in it.
 
 ### About seeding
 
