@@ -65,6 +65,35 @@ python run.py
 
 Open **http://127.0.0.1:5000** in your browser. Flask serves both the website and its API from this address. Stop the server with `Ctrl+C` in the terminal.
 
+## Host with Docker
+
+The included Docker setup runs the app with Gunicorn, exposes port `8080` by default, and stores SQLite data in a named volume so it survives container rebuilds.
+
+1. Install Docker with Docker Compose support.
+2. From the repository root, create a local environment file and set a unique secret:
+
+   ```bash
+   cp .env.example .env
+   ```
+
+   Replace the `SECRET_KEY` value in `.env` with a long random value before hosting.
+3. Build and start the container:
+
+   ```bash
+   docker compose up --build -d
+   ```
+
+4. Open **http://localhost:8080**. The first start seeds the persistent database with the bundled sample data. Later starts keep the database as-is.
+
+Useful commands:
+
+```bash
+docker compose logs -f web   # follow application logs
+docker compose down          # stop containers; retain the database volume
+```
+
+Set `PORT` in `.env` to change the host port. The database lives in the Docker volume `grocery_data`; back up that volume before removing or migrating it. `docker compose down -v` deletes it, including saved lists, budgets, and expenses. The image runs as a non-root user. If you deploy with a bind-mounted `/data` directory instead of the included named volume, make that directory writable by the container user (UID 10001).
+
 ### About seeding
 
 `python scripts/seed.py` creates the SQLite database at `backend/instance/grocery.db` and loads the bundled CSV data. **Seeding replaces the database** and deletes locally saved shopping lists, budgets, and expenses. Run it for a fresh setup or when you intentionally want to reset your local data; do not rerun it just to start the server.

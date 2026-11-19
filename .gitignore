@@ -6,6 +6,11 @@ __pycache__/
 venv/
 env/
 .DS_Store
+# Local environment and secrets. Keep the shareable template tracked.
+.env
+.env.*
+!.env.example
+# Local SQLite databases and runtime state.
 backend/instance/*.db
 *.sqlite
 *.sqlite3
